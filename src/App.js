@@ -8,14 +8,15 @@ import pizzas from "./data";
 
 function App() {
   return (
-    <>
-    <Confirmation />
       <Container>
         <Row>
-          <p>Hello There</p>
+          {pizzas.map(data => (
+            <Col xs={3} className="mb-5" key={`${data.id}`}>
+              <PizzaCard data={data} />
+            </Col>
+          ))}
         </Row>
       </Container>
-    </>
   );
 }
 
