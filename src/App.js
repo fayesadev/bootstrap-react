@@ -8,11 +8,14 @@ import pizzas from "./data";
 
 function App() {
   return (
-    <Container>
-      <Row>
-        <p>Hello There</p>
-      </Row>
-    </Container>
+    <>
+    <Confirmation />
+      <Container>
+        <Row>
+          <p>Hello There</p>
+        </Row>
+      </Container>
+    </>
   );
 }
 
