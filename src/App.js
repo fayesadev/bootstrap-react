@@ -17,9 +17,10 @@ function App() {
       setOrdered(false);
     }, 3000);
   }
-  
+
   return (
       <Container>
+        {ordered && <Confirmation toggle={setOrdered} />}
         <Row>
           {pizzas.map(data => (
             <Col xs={3} className="mb-5" key={`${data.id}`}>

@@ -1,4 +1,4 @@
-import { Card, Badge, Button } from 'react-bootstrap';
+import { Card, Badge, Button } from "react-bootstrap";
 
 export function PizzaCard({ data, setOrdered }) {
   return (
@@ -8,7 +8,16 @@ export function PizzaCard({ data, setOrdered }) {
         <div className="d-flex mb-2 justify-content-between">
           <Card.Title className="mb-0 font-weight-bold">{data.name}</Card.Title>
         </div>
+        <Card.Text className="text-secondary">{data.desc}</Card.Text>
+        <Button
+          onClick={() => setOrdered()}
+          className="mt-auto font-weight-bold"
+          variant="success"
+          block
+        >
+          Order Pizza
+        </Button>
       </Card.Body>
     </Card>
-  )
+  );
 }
