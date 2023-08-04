@@ -10,7 +10,6 @@ export function Confirmation({ toggle }) {
       <Toast.Body>
         Your delicious pizza will be with you in 30 minutes!
       </Toast.Body>
-
     </Toast>
   )
 }
